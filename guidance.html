@@ -9,10 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./script.js"></script>
   
-<!---
-I wouldn't have to be doing this if the main office told us where our original guidance went!
 
--->
 
 <style>
 th {
@@ -27,29 +24,46 @@ border:1px solid silver;
 }
     
         
-        .tvTable .playbackTable .consoleTable {
-        padding:8px;
-            flex:inherit;
+  table {
+      padding:8px;
+      flex:inherit;
         
             
     }
     
     .advisories{
         padding-top:5px;
+        color:red;
         
     }
     
-    h2{
+    #ps2Prices th {
+        color:#6a5acd;
         
-        padding-left:8px;
     }
+    
 </style>
 </head>
 <body>
     <div class="container-fluid page">
-    <nav class="navbar" id="ezBar">
-    
-    </nav>
+   
+    </div>
+    <!--
+Ah, we know this already, but in the event we get someone new or someone in another department fills in...
+-->
+    <div class="desktopAdvisory">
+    <h1>Desktop computers come with:</h1>
+        <ul>
+        <li>Monitor (see monitor advisory below)</li>
+            <li><strong>Standard</strong> Mouse</li>
+            <li><strong>Standard</strong> Keyboard</li>
+            <li>Wireless Antenna (if wi-fi enabled, see below)</li>
+        </ul>
+        <strong class="advisories">Always include these unless customer declines.</strong>
+        </div>
+    <br>
+    <div class="games">
+    <strong>For game prices, the best thing to do is consult <a href="https://www.pricecharting.com/">PriceCharting</a></strong>
     </div>
 <div class="row" "container-fluid">
     <div class="col-md-4">
@@ -112,7 +126,7 @@ border:1px solid silver;
 </div>
     <div class="col-md-4">
 <div class="consoleTable">
-  <h2>Game Consoles</h2>
+  <h2>Game Console Bundles</h2>
 <table id="gameConsoles">
     <!-- I do not know the prices for these right off
 
@@ -124,7 +138,7 @@ border:1px solid silver;
     </tr>
     <tr>
 <th>Wii</th>
-        <td>$54.99+</td>u
+        <td>$54.99+</td>
     </tr>
     <tr>
 <th>Wii U</th>
@@ -150,6 +164,10 @@ border:1px solid silver;
     <th>PS4</th>
         <td>$129.99</td>
 </tr>
+     <tr>
+    <th>PS2</th>
+        <td class="individualPS2">Varies*</td>
+</tr>
 </table>
     <br>
     <table id="xbox360Prices" style="display:none">
@@ -163,9 +181,20 @@ border:1px solid silver;
     </tr>
     <tr>
     <th>Slim</th>
-        <td></td>
+        <td>$109.99</td>
     </tr>
         </table>
+    <br>
+    <table id="ps2Prices" style="display:none">
+    <tr>
+    <th>Regular</th>
+        <td>$79.99</td>
+    </tr>
+    <tr>
+    <th>Slimline</th>
+        <td>$99.99</td>
+    </tr>
+    </table>
 </div>
 </div>
 </div>
@@ -176,11 +205,14 @@ border:1px solid silver;
         <table id="monitors">
             <h2>Monitors</h2>
             <tr>
+                <th>22"</th>
+                <td>$34.99</td>
             </tr>
             </table>
-            <strong>HDMI supported monitors - add $10</strong>
+            <strong class="advisories">HDMI supported monitors - add $10</strong>
             <br>
-            <strong>All monitors come with the power cable and either VGA or HDMI free</strong>
+            <strong class="advisories">All monitors come with the power cable and either VGA or HDMI free</strong>
+            <br>
         </div>
         </div>
         <div class="col-md-4">
@@ -189,13 +221,20 @@ border:1px solid silver;
                  <h2>Networking</h2>
                  <tr>
                  <th>SOHO Routers</th>
-                 <td>$14.99</td>
+                    <td>$14.99</td>
                  </tr>
                  <tr>
-                 <th>Switches</th>
+                 <th>SOHO Switches</th>
                      <td>$7.99</td>
                  </tr>
-                 
+                 <tr>
+                 <th>Enterprise Routers</th>
+                    <td>$34.99</td>
+                 </tr>
+                 <tr>
+                 <th>Enterprise Switches</th>
+                    <td>$27.99</td>
+                 </tr>
                  <tr>
                  <th>Cable Modems</th>
                      <td>$4.99</td>
@@ -218,7 +257,10 @@ border:1px solid silver;
                  <th>Wireless Antennae</th>
                      <td>$.99</td>
                  </tr>
+                 
             </table>
+            <br>
+                 <strong class="advisories">Any desktop with Wi-Fi must have an antenna with it</strong>
         </div>
     </div>
                 <div class="col-md-4">
@@ -237,18 +279,30 @@ border:1px solid silver;
                     <tr>
                     <th>Gaming Mice</th>
                         <td>$7.99+</td>
-                    </tr><h2>Game Controllers</h2>
-                                        <tr>
-                        <th>Keyboards</th>
-                    <td>$2.99</td>
+                    </tr>
+                    <tr>
+                    <th>Standard Keyboards</th>
+                        <td>$2.99</td>
                     </tr>
                     <tr>
                     <th>Gaming Keyboards</th>
                         <td>$9.99+</td>
                     </tr>
                     <tr>
+                    <th>Wireless Keyboards</th>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
                     <th>Basic Speakers</th>
                         <td>$4.99</td>
+                    </tr>
+                    <tr>
+                    <th>Speaker + Sub</th>
+                        <td>$24.99</td>
+                    </tr>
+                     <tr>
+                    <th>Headsets</th>
+                        <td>$4.99+</td>
                     </tr>
                 </table>
             </div>
@@ -258,9 +312,9 @@ border:1px solid silver;
     <div class="row" "container-fluid">
     <div class="col-md-4">
         <div class="gameControllerTable">
-            <h2>Game Controllers</h2>
-        <table id="gameController">
             
+        <table id="gameController">
+            <h2>Game Controllers</h2>
             <tr>
             <th>GameCube</th>
                 <td>$9.99</td>
@@ -282,11 +336,7 @@ border:1px solid silver;
                 <td>$7.99</td>
             </tr>
             </table>
-            <br>
-            <br>
-            <strong class="advisories">Prices will vary based on manufacturer</strong>
-            <br>
-            <strong class="advisories">Official controllers will run slightly higher than third party ones</strong>
+            
         </div>
         </div>
         <div class="col-md-4">
@@ -295,15 +345,93 @@ border:1px solid silver;
         <table id="storage">
             <tr>
             <th>SATA - 500GB></th>
-                <td></td>
+                <td>$29.99</td>
             </tr>
+            <tr>
+            <th>SATA - 500GB-1TB</th>
+                <td>$49.99</td>
+            </tr>
+            <tr>
+            <th>SATA - 2TB+</th>
+                <td>$79.99</td>
+            </tr>
+            <tr>
+            <th>External 500GB></th>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+            <th>External 500GB-1TB</th>
+                <td>$24.99</td>
+                </tr>
+            <tr>
+            <th>External 1TB+</th>
+                <td>$34.99</td>
+                </tr>
           </table>
             <br>
-            <strong class="advisories">SSD - add $25</strong>
+            <strong class="advisories">SSD - add $25 (add $20 more for NVMe)</strong>
+            <br>
+            <strong class="advisories">2.5" form factor (laptop) - add $10</strong>
         </div>
         </div>
-        
+        <div class="col-md-4">
+        <div class="storageTable">
+            <h2>Other Drives</h2>
+        <table id="storage">
+            <tr>
+            <th>CD-R</th>
+                <td>$2.99</td>
+            </tr>
+            <tr>
+            <th>CD-RW</th>
+                <td>$7.99</td>
+            </tr>
+            <tr>
+            <th>DVD-R</th>
+                <td>$4.99</td>
+            </tr>
+            <tr>
+            <th>DVD-RW</th>
+                <td>$9.99</td>
+            </tr>
+            <tr>
+            <th>3 1/2 Floppy</th>
+                <td>$.99</td>
+            </tr>
+          </table>
+        </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row" "container-fluid">
+    <div class="col-md-4">
+        <div class="appleTable">
+        <table id="appleProducts">
+            <h2>Apple</h2>
+            <tr>
+            <th>Mac Mice</th>
+                <td>$44.99</td>
+            </tr>
+            <tr>
+            <th>Mac Keyboards</th>
+                <td>$74.99</td>
+            </tr>
+            </table>
+        </div>
+        </div>
     </div>
 </body>
+<!---
+In which I cut a promo:
 
+
+1. I wouldn't have to be doing this if the main office told us where our original guidance went!
+2. If you take four smoke breaks an hour, I don't wanna hear jack shit about how I don't do as much as you want me to after this. Period. Skill issue. Besides, do you actually have the spine to actually bring it up to my face, or are you too comfortable doing that shit in the break room or on the loading dock?
+
+What I'm saying is.. none of you in management can do this. None of y'all can do what I can fucking do. Now get off my back.
+3. And that goes for anyone who says GRID is easy - yeah, it is for Jacob, Chris, and me because we have some idea of what we're doing. Besides, if GRID was easy, why the fuck don't they trust any of you to cover it when none of us are available? Better yet, why am I doing 8 on in 9 days, with 7 straight? Why do I get called once a week ON MY BREAKS to answer a question about it? Skill. Issue. Get on my fucking level if you're so pressed about it.
+4. One last thing, my name is NOT "someone from The Grid." Besides, there's usually only one of us here at a time, anyway. Get an on-call and learn our names, please.
+5. Nah, forget it. I got something else to say: if we're the SPOF for a third of the store, maybe that should be an indicator for someone in management to get versed in what we do
+-->
+    
 </html>
