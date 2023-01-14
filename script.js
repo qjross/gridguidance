@@ -1,11 +1,6 @@
 var n = 0
 $(document).ready(function(){
     
-$(".tvNavBar").click(function(){
-  $(".tvTable").scroll();
-    
-})
-
 $(".individual360Advisory").click(function(){
   $("#xbox360Prices").toggle();
     });           
@@ -15,17 +10,19 @@ $(".individual360Advisory").click(function(){
     });
     
     $(".ddr1").click(function(){
-  $(".ddr1Price").toggle();
+  $(".ddr1Table").toggle();
     });       
         $(".ddr2").click(function(){
-  $(".ddr2Price").toggle();
+  $(".ddr2Table").toggle();
     });    
   
         $(".ddr3").click(function(){
-  $(".ddr3Price").toggle();
+  $(".ddr3Table").toggle();
     });    
         $(".ddr4").click(function(){
-  $(".ddr4Price").toggle();
+  $(".ddr4Table").toggle();
     });    
+    
+
     
    });                               

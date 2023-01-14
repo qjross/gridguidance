@@ -16,9 +16,19 @@ I have a SASS version of the CSS in the repo; don't call to it yet.
 
 </head>
 <body>
-    <div class="container-fluid page">
-   
-    </div>
+    <nav class="navbar" "navbar-dark" "bg-dark">
+    <a class="nav-item" "nav-link active" href="#tvNav" id="tvBar">TVs</a>
+    <a class="nav-item" "nav-link active" href="#playbackNav">Playback</a>
+    <a class="nav-item" "nav-link active" href="#consoleNav">Consoles</a>
+    <a class="nav-item" "nav-link active" href="#monitorNav">Monitors</a>
+    <a class="nav-item" "nav-link active" href="#networkNav">Networking</a>
+    <a class="nav-item" "nav-link active" href="#essentialNav">Essentials</a>
+    <a class="nav-item" "nav-link active" href="#controlNav">Controllers</a>
+    <a class="nav-item" "nav-link active" href="#storNav">Storage</a>
+    <a class="nav-item" "nav-link active" href="#cdNav">Optical Drives</a>
+    <a class="nav-item" "nav-link active" href="#macNav">Apple</a>
+    <a class="nav-item" "nav-link active" href="#memNav">RAM</a>
+    </nav>
     <!--
 Ah, we 3 know this already, but in the event we get someone new or someone in another department fills in...
 -->
@@ -43,7 +53,7 @@ Ah, we 3 know this already, but in the event we get someone new or someone in an
 One of the underrated reasons for doing this: DPs and GRID needed to come to a consensus on TV pricing.
 -->
 <table id="TVs">
-<h2>TVs</h2>
+<h2 id="tvNav">TVs</h2>
 <tr>
 <th>Under 20"</th>
     <td>$24.99</td>
@@ -72,7 +82,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
     <div class="col-md-4">
 <div class="playbackTable">
 <table id="playbackDevices">
-<h2>Playback Devices</h2>
+<h2 id="playbackNav">Playback Devices</h2>
 <tr>
 <th>VCRs</th>
     <td>$4.99</td>
@@ -100,7 +110,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
 </div>
     <div class="col-md-4">
 <div class="consoleTable">
-  <h2>Game Console Bundles</h2>
+  <h2 id="consoleNav">Game Console Bundles</h2>
 <table id="gameConsoles">
     <!-- I do not know the prices for these right off
 
@@ -177,7 +187,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
     <div class="col-md-4">
         <div class="monitorTable">
         <table id="monitors">
-            <h2>Monitors</h2>
+            <h2 id="monitorNav">Monitors</h2>
             <tr>
                 <th>22"</th>
                 <td>$34.99</td>
@@ -192,7 +202,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
         <div class="col-md-4">
         <div class="networkingTable">
              <table id="networking">
-                 <h2>Networking</h2>
+                 <h2 id="networkNav">Networking</h2>
                  <tr>
                  <th>SOHO Routers</th>
                     <td>$14.99</td>
@@ -220,11 +230,11 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
 -->
                  </tr>
                  <tr>
-                 <th>RJ-45 Cables</th>
+                 <th title="Ethernet">RJ-45 Cables</th>
                      <td>$1.99</td>
                  </tr>
                   <tr>
-                 <th>RJ-11</th>
+                 <th title="Phone">RJ-11</th>
                      <td>$.29</td>
                  </tr>
                  <tr>
@@ -240,7 +250,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
                 <div class="col-md-4">
             <div class="peripheralTable">
                 <table id="peripherals">
-                <h2>Essentials</h2>
+                <h2 id="essentialNav">Essentials</h2>
                     <tr>
                     <th>Standard Mice</th>
                         <td>$1.99</td>
@@ -288,7 +298,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
         <div class="gameControllerTable">
             
         <table id="gameController">
-            <h2>Game Controllers</h2>
+            <h2 id="controlNav">Game Controllers</h2>
             <tr>
             <th>GameCube</th>
                 <td>$9.99</td>
@@ -315,8 +325,9 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
         </div>
         <div class="col-md-4">
         <div class="storageTable">
-            <h2>Storage</h2>
+            
         <table id="storage">
+            <h2 id="storNav">Storage</h2>
             <tr>
             <th>SATA 3.5" - 500GB></th>
                 <td>$29.99</td>
@@ -354,7 +365,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
         </div>
         <div class="col-md-4">
         <div class="storageTable">
-            <h2>Other Drives</h2>
+            <h2 id="opticalNav">Other Drives</h2>
         <table id="storage">
             <tr>
             <th>CD-R</th>
@@ -385,7 +396,7 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
     <div class="col-md-4">
         <div class="appleTable">
         <table id="appleProducts">
-            <h2>Apple</h2>
+            <h2 id="macNav">Apple</h2>
             <tr>
             <th>Mac Mice</th>
                 <td>$44.99</td>
@@ -404,11 +415,12 @@ One of the underrated reasons for doing this: DPs and GRID needed to come to a c
         <div class="col-md-4">
         <div class="memoryTable">
             <table id="memoryModules">
-                <h2 title="This will probably mess a lot of people up. MAKE SURE YOU HAVE THE CORRECT MODULE">RAM</h2>
+                <h2 title="This will probably mess a lot of people up. MAKE SURE YOU HAVE THE CORRECT MODULE" id="memNav">RAM</h2>
                 <!--
 It nearly got me, too. I was looking to buy an upgrade for my Inspiron and nearly got a DDR4 when I needed a DDR3.
 -->
                 <strong class="advisories">DIMM chart is right over <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Desktop_DDR_Memory_Comparison.svg/1200px-Desktop_DDR_Memory_Comparison.svg.png">here.</a></strong>
+                <br>
             <tr>
                 <th>DDR</th>
                 <br>
@@ -429,7 +441,10 @@ It nearly got me, too. I was looking to buy an upgrade for my Inspiron and nearl
             </table>
             <br>
             <br>
-            <table class="ddr1Price" style="display:none">
+            <div class="ddrTables">
+                <div class="ddr1Table" style="display:none">
+                    <h3>DDR</h3>  
+            <table class="ddr1Price">
                 <tr>
                 <th>256MB</th>
                 <td>$.79</td>
@@ -442,9 +457,13 @@ It nearly got me, too. I was looking to buy an upgrade for my Inspiron and nearl
                 <th>1GB</th>
                 <td>$1.99</td>
                 </tr>
+                
             </table>
-            <table class="ddr2Price" style="display:none">
-                  <tr>
+                    </div>
+                <div class="ddr2Table" style="display:none">
+                    <h3>DDR2</h3>
+            <table class="ddr2Price">
+                 <tr>
                 <th>256MB</th>
                 <td>$.89</td>
                 </tr>
@@ -465,7 +484,11 @@ It nearly got me, too. I was looking to buy an upgrade for my Inspiron and nearl
                 <td>$2.99</td>
                 </tr>
             </table>
-            <table class="ddr3Price" style="display:none">
+                    </div>
+           <div class="ddr3Table" style="display:none">
+               <h3>DDR3</h3>
+                 <table class="ddr3Price">
+                <h3 style="display:none">DDR</h3>
                 <tr>
                   <th>1GB</th>
                 <td>$4.99</td>
@@ -478,23 +501,50 @@ It nearly got me, too. I was looking to buy an upgrade for my Inspiron and nearl
                 <th>4GB</th>
                 <td>$9.99</td>
                 </tr>
-            </table>
-            <table class="ddr4Price" style="display:none">
-            </table>
+                     </table>
+                </div>
             
+           <div class="ddr4Table" style="display:none">
+                <h3>DDR4</h3>
+                 <table class="ddr4Price">
+                <h3 style="display:none">DDR</h3>
+                <tr>
+                <th>4GB</th>
+                <td>$14.99</td>
+                </tr>
+                <tr>
+                <th>8GB</th>
+                <td>$24.99</td>
+                </tr>
+                <tr>
+                <th>16GB</th>
+                <td>$44.99</td>
+                </tr>
+                <tr>
+                <th>32GB</th>
+                    <td>$59.99</td>
+                </tr>
+            </table>
+                </div>
+                </div>
+            <br>
+            <strong class="advisories">Price also applies if they are bought in a set of 2 (i.e. 2x4GB, same as a single 8)</strong>
             </div>
         </div>
     </div>
     </body>
     <!---
 In which I cut a promo:
-1. I wouldn't have to be doing this if the main office told us where our original guidance went! Get it together, Ethan! (I'm only messing with you)
-2. If you take four smoke breaks an hour, I don't wanna hear jack shit about how I don't do as much as you want me to after this. Period. Skill issue. Besides, do you actually have the spine to actually bring it up to my face, or are you too comfortable doing that shit in the break room or on the loading dock where I can't hear it?
+1. I wouldn't have to be doing this if the main office told us where our original guidance went! Get it together, Ethan! (I'm only fucking with you)
+2. Now we get to the serious shit: if you take four smoke breaks an hour, I don't wanna hear jack shit about how I don't do as much as you want me to after this. Period. Besides, do you actually have the spine to actually bring it up to my face, or are you too comfortable doing that shit in the break room or on the loading dock where I can't hear it?
 What I'm saying is.. none of you in management can do this. None of y'all can do what either Chris, Jacob, or I can fucking do. Now get off my back.
-3. And that goes for anyone who says GRID is easy - yeah, it is for Jacob, Chris, and me because we have some idea of what we're doing. Besides, if GRID was easy, why the fuck don't they trust any of you to cover it when none of us are available? Better yet, why am I doing 8 on in 9 days, with 7 straight? Why do I get called once a week ON MY BREAKS to answer a question about it? Skill. Issue. Get on my fucking level if you're so pressed about it.
+3. And that goes for anyone who says GRID is easy - yeah, it is for Jacob, Chris, and me because we have some idea of what we're doing. Besides, if GRID was easy, why the fuck don't you trust anyone else to cover it when none of us are available? Better yet, why am I doing 8 on in 9 days, with 7 straight? Why do I get called once a week ON MY BREAKS to answer a question about it? Skill. Issue. Get on my fucking level if you're so pressed about it.
 4. One last thing, my name is NOT "someone from The Grid." Besides, there's usually only one of us here at a time, anyway. Get an on-call and learn our names, please.
-5. I got something else to say: you knew Chris was starting his spring semester this week. In fact, you should have because UNCC has an entire fucking academic calendar you can consult at any time. He gives you his schedule, you consult the calendar, work around it. Easy. The fact you failed to plan for that and have me pulling 8 of 9, with 7 straight because you either can't trust anyone else in the fucking store with GRID, or you can't do it yourselves? That makes ALL OF YOU look fucking bad. Again, how are y'all gonna say it's cushy (which it is, but for US) when you can't do a fraction of what we fucking do?
-6. Sike, still ain't done. Remember last October when I called y'all out for expecting us to do shit you wouldn't do? At least I know Herman would be mad enough to pull this kind of schedule himself - I stand corrected on calling him out for wanting us to do things he wouldn't do himself. However, I don't think the fucking rest of you in management would be willing to do this 8 in 9, 7 straight clip I'm doing. I guess the monkey paw wasn't that far behind when Herman snatched the book from Cyndee.
-7. I know it's not my department, but confederate flag shit gets immediately pulled off the floor. I don't give a fuck how much trouble I'm looking at getting in by doing it. We can either cater to the people who would buy that shit, or we can cater to actual people with value and worth to this planet. If a customer has a problem with no confederate shit, they can immigrate to Canada and apply for MAID for all I care. That would be the only good thing they could do for humanity, to be honest.
+5. I got something else to say: you knew Chris was starting his spring semester this week. In fact, you should have because UNCC has an entire fucking academic calendar you can consult at any time. He gives you his schedule, you consult the calendar, work around it. Easy. The fact you failed to plan for that and have me pulling 8 of 9, with 7 straight because you either can't trust anyone else in the fucking store with GRID, or you can't do it yourselves? That makes ALL OF YOU look fucking bad. Again, how are y'all gonna say it's cushy (which it is, but it is for US) when you can't do a fraction of what we fucking do? You bozos need a better plan than "oh, Chris can't work these shifts that we knew he couldn't, yet scheduled him for anyway? Let's take one of Quinten or Jacob's days off away from them" because there's going to come a time when that option isn't viable anymore. Hell, THAT'S ANOTHER REASON WHY I'M DOING THIS.
+6. Sike, still ain't done. Remember last October when I called y'all out for expecting us to do shit you wouldn't do? At least I know Herman would be mad enough to pull this kind of schedule himself - I stand corrected on calling him out for wanting us to do things he wouldn't do himself (although he probably wouldn't want anyone else doing it, to be fair). However, I don't think the fucking rest of you in management would be willing to do this 8 in 9, 7 straight clip I'm doing. I guess the monkey paw wasn't that far behind when Herman snatched the book from Cyndee.
+7. I know it's not my department, but if I see confederate flag shit on the floor, it's going straight off. I don't give a fuck how much trouble I'm looking at getting in by doing it. We can either cater to the people who would buy that shit, or we can cater to actual people with value and worth to this planet.
+8. Oh fuck. Brandy goes on vacation the same week she expects me to pull 8 of 9 with 7 straight, clopening FRI-SAT? Oh, she better have a good reason for this.
+9. I already know what the spin will be on this, and I counter with something I told my SM when I was at Kmart: there's a thin line between seeing someone as dependable and seeing someone as an easy mark. The minute you start seeing me more as a mark than as a dependable worker...
+
 -->
 </html>
