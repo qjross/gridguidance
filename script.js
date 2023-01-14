@@ -23,6 +23,12 @@ $(".individual360Advisory").click(function(){
   $(".ddr4Table").toggle();
     });    
     
-
+$(".navbar-brand").mouseover(function(){
+ $(this).css({color: "#FFFFFF"});
+ });
+    
+ $(".navbar-brand").mouseout(function() {
+  $(this).removeAttr("style");
+}); 
     
    });                               

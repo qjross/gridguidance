@@ -33,3 +33,17 @@ border:1px solid silver;
     background-color:dimgrey;
     
 }
+
+nav{
+    background-color:#000000;
+        
+}
+
+.nav-item{
+    color:limegreen;
+    
+}
+
+.navbar-brand{
+    color:limegreen;
+}
