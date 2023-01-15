@@ -1,8 +1,30 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url('./SpaceGrotesk-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "SpaceGroteskBold";
+  src: url('./SpaceGrotesk-Bold.ttf') format("truetype");
+}
+
+body {
+    
+    font-family:"SpaceGrotesk";
+}
+
+.gridLogo{
+    width:100px;
+    height:40px;
+}
+
 th {
     border:3px solid silver;
     background-color:black;
-    color:lime;
+    color:#8cff0b;
     padding:6px;
+    font-family:"SpaceGroteskBold";
+   
 }
 
 td {
@@ -20,6 +42,7 @@ border:1px solid silver;
     .advisories{
         padding-top:5px;
         color:red;
+        font-family:"Helvetica";
         
     }
     
@@ -34,16 +57,21 @@ border:1px solid silver;
     
 }
 
-nav{
+.navbar{
     background-color:#000000;
+    position:fixed;
+     width: 100%;
+  top: 0;
+  left: 0;
         
 }
 
 .nav-item{
-    color:limegreen;
+    color:#8cff0b;
+    justify-content:center;
     
 }
 
 .navbar-brand{
-    color:limegreen;
+    color:#8cff0b;
 }
