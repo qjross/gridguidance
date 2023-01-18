@@ -31,4 +31,12 @@ $(".navbar-brand").mouseover(function(){
   $(this).removeAttr("style");
 }); 
     
+$(".navbar").mouseover(function(){
+    $(this).css({opacity: 0.5});
+});
+    
+$(".navbar").mouseleave(function(){
+    $(this).css({opacity: 1.0});
+});
+    
    });                               
