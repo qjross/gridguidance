@@ -13,6 +13,7 @@ body {
     font-family:"SpaceGrotesk";
 }
 
+
 .gridLogo{
     width:100px;
     height:40px;
@@ -25,6 +26,10 @@ th {
     padding:6px;
     font-family:"SpaceGroteskBold";
    
+}
+
+h2 {
+    font-family:"SpaceGroteskBold";
 }
 
 td {
@@ -57,12 +62,19 @@ border:1px solid silver;
     
 }
 
+#ps3Prices th {
+    color:silver;
+    
+}
+
+
 .navbar{
     background-color:#000000;
     position:fixed;
      width: 100%;
   top: 0;
   left: 0;
+
         
 }
 
@@ -74,4 +86,8 @@ border:1px solid silver;
 
 .navbar-brand{
     color:#8cff0b;
+}
+
+.deskAdv{
+    font-family:"SpaceGroteskBold";
 }
