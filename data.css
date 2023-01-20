@@ -3,6 +3,7 @@
 	src: url('./SpaceGrotesk-Regular.ttf') format("truetype") 
 	font-family: "SpaceGroteskBold" 
 	src: url('./SpaceGrotesk-Bold.ttf') format("truetype") 
+    
 body 
 	font-family: "SpaceGrotesk" 
 .gridLogo 
@@ -13,6 +14,8 @@ th
 	background-color: black 
 	color: #8cff0b 
 	padding: 6px 
+	font-family: "SpaceGroteskBold" 
+h2 
 	font-family: "SpaceGroteskBold" 
 td 
 	border: 1px solid silver 
@@ -30,6 +33,9 @@ table
 	th 
 		color: lime 
 		background-color: dimgrey 
+#ps3Prices 
+	th 
+		color: silver 
 .navbar 
 	background-color: #000000 
 	position: fixed 
@@ -39,5 +45,22 @@ table
 .nav-item 
 	color: #8cff0b 
 	justify-content: center 
+	text-decoration: none 
 .navbar-brand 
 	color: #8cff0b 
+.deskAdv 
+	font-family: "SpaceGroteskBold" 
+.dropdown 
+	position: relative 
+	display: inline-block 
+.dropMenu 
+	list-style: none 
+	background-color: black 
+#menuItem 
+	font: "SpaceGroteskBold" 
+	color: silver 
+	margin: 0px 
+	padding: 0px 
+	text-decoration: none 
+	position: relative 
+	display: inline-block 

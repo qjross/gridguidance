@@ -59,5 +59,8 @@ $(".nav-item").mouseleave(function() {
 $(".x360HDD").click(function(){
     $(".x360StorTable").toggle();
         });
+$(".navbar-brand").click(function(){
+    $(".dropMenu").toggle();
+});
     
    });                               

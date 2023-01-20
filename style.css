@@ -81,6 +81,7 @@ border:1px solid silver;
 .nav-item{
     color:#8cff0b;
     justify-content:center;
+    text-decoration: none;
     
 }
 
@@ -90,4 +91,27 @@ border:1px solid silver;
 
 .deskAdv{
     font-family:"SpaceGroteskBold";
+}
+    
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropMenu{
+    list-style:none;
+    background-color:black;
+}
+
+#menuItem {
+    font:"SpaceGroteskBold";
+    color:silver;
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    position:relative;
+    display: inline-block;
+    
+    
+    
 }

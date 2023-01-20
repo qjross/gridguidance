@@ -8,6 +8,7 @@ I don't know if we even need this, but I'm pushing it to the repo anyway
     
         <!--
 One thing - use the Grid logo to trigger the dropdown to switch from guidance to best practices
+Got that 1/19, now to make it dramatically less janky
 -->
 
 <head>
@@ -33,23 +34,62 @@ This uses Florian Karsten's Space Grotesk font: https://github.com/floriankarste
 
     </head>
 <body>
-    <div class="flex-container" "dropdown">
-        <nav class="navbar navbar-dark bg-dark navbar-fixed-top" id="gridBar">
-    <a class="navbar-brand" href="#"><img src="site-logo.png" class="gridLogo"></a>
-        </nav>
-    </div>
+           <div class="flex-container">
+               <nav class="navbar navbar-dark bg-dark navbar-fixed-top" id="gridBar">
+                   <div class="dropdown">
+            <a class="navbar-brand" href="#"><img src="site-logo.png" class="gridLogo"></a>
+            <ul class="dropMenu" style="display:none">
+                <li><a href="./guidance.html" id="menuItem">Guidance</a></li>
+                <li><a class="active" href="./bestpractices.html" id="menuItem">Best Practices</a></li>
+                </ul>
+                       </div>
+               </nav>
+            </div>
     <br>
     <br>
     <br>
+    <div class="row container-fluid">
+<div class="col-md-4">
+    <div class="gamePractices">
+<h2>Games</h2>
+<h3>High theft risk games - apply 2x tape</h3>
+       <p>High theft risk games/franchises include:</p>
+       <ul>
+           <li>Call of Duty</li>
+           <li>NBA 2K</li>
+           <li>Madden NFL</li>
+           <li>Halo</li>
+           <li></li>
+       </ul>
+        <strong class="advisories">Games with just download codes: toss them if they are not in the original shrink wrap. Assume the donor has already used it.</strong>
+    
+       </div>
+</div>
     
 <div class="col-md-4">
-    <div class="container-fluid">
-   <div class="gamePractices">
-<h2>Games</h2>
-<p>High theft games - apply 2x tape</p>
+    <div class="desktopAdvisory">
+        <h2>Desktops</h2>
+    <h3>Desktop computers come with:</h3>
+        <ul>
+            <li>Monitor <a href="#monitorNav">see monitor advisory</a></li>
+            <li><strong class="deskAdv">Standard</strong> Mouse</li>
+            <li><strong class="deskAdv">Standard</strong> Keyboard</li>
+            <li>Wireless Antenna (if wi-fi enabled, see below)</li>
+        </ul>
+        <strong class="advisories">Always include these unless customer declines.</strong>
+    <p>If any of them are wi-fi enabled, make sure to run Windows Updates on them because it will save the user a lot of headache later on.</p>
+    <p>YMMV, but it's recommended to cut the screensaver off not only to make it easier to track, but those with lower specs don't tend to respond well coming off screensaver/sleep mode.</p>    
+        </div>
     </div>
-</div>
+<div class="col-md-4">
+    <div class="laptopPractices">
+    <h2>Laptops</h2>
+       <strong class="advisories">ALWAYS MAKE SURE TO HAVE THE CORRECT ADAPTER.</strong>
+        </div>
+    </div>        
+        
     </div>
+    
     </body>
 
 </html>
