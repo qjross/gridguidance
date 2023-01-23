@@ -7,12 +7,7 @@ $(".individual360Advisory").click(function(){
     $("#ps3Prices").hide();
     });           
     
-$(".individualPS2").click(function(){
-  $("#ps2Prices").toggle();
-    $("#xbox360Prices").hide();
-    $("#ps3Prices").hide();
-    });
-    
+
 $(".individualPS3").click(function(){
   $("#ps3Prices").toggle();
     $("#ps2Prices").hide();
