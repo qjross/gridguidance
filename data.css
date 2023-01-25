@@ -1,9 +1,8 @@
-@@font-face 
+@font-face 
 	font-family: "SpaceGrotesk" 
 	src: url('./SpaceGrotesk-Regular.ttf') format("truetype") 
 	font-family: "SpaceGroteskBold" 
 	src: url('./SpaceGrotesk-Bold.ttf') format("truetype") 
-    
 body 
 	font-family: "SpaceGrotesk" 
 .gridLogo 
@@ -55,7 +54,7 @@ table
 	display: inline-block 
 .dropMenu 
 	list-style: none 
-	background-color: black 
+	background-color: #212529 
 #menuItem 
 	font: "SpaceGroteskBold" 
 	color: silver 
