@@ -106,13 +106,11 @@ border:1px solid silver;
 
 #menuItem {
     font:"SpaceGroteskBold";
-    color:silver;
-    margin:0px;
-    padding:0px;
-    text-decoration:none;
-    position:relative;
-    display: inline-block;
-    
+    color: silver;
+    float:none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
     
     
 }
