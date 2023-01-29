@@ -63,3 +63,9 @@ table
 	text-decoration: none 
 	position: relative 
 	display: inline-block 
+hr
+    width: 100%
+    height: 30px
+    margin-left: auto
+    margin-right: auto
+    background-color: silver
