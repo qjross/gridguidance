@@ -5,6 +5,9 @@ $(".individual360Advisory").click(function(){
   $("#xbox360Prices").toggle();
     $("#ps2Prices").hide();
     $("#ps3Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialSNESprices").hide();
+    $("#specialN64prices").hide();
     });           
     
 
@@ -12,8 +15,47 @@ $(".individualPS3").click(function(){
   $("#ps3Prices").toggle();
     $("#ps2Prices").hide();
     $("#xbox360Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialSNESprices").hide();
+    $("#specialN64prices").hide();
     });
     
+$(".specialNESadvisory").click(function(){
+  $("#specialNESPrices").toggle();
+    $("#ps2Prices").hide();
+    $("#ps3Prices").hide();
+    $("#xbox360Prices").hide();
+    $("#specialSNESprices").hide();
+    $("#specialN64prices").hide();
+    });
+    
+$(".specialSNESadvisory").click(function(){
+  $("#specialSNESPrices").toggle();
+    $("#ps2Prices").hide();
+    $("#ps3Prices").hide();
+    $("#xbox360Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialN64prices").hide();
+    });
+    
+$(".specialN64advisory").click(function(){
+  $("#specialN64Prices").toggle();
+    $("#ps2Prices").hide();
+    $("#ps3Prices").hide();
+    $("#xbox360Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialSNESprices").hide();
+    });
+    
+$(".specialXBOXadvisory").click(function(){
+  $("#specialXboxPrices").toggle();
+    $("#ps2Prices").hide();
+    $("#ps3Prices").hide();
+    $("#xbox360Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialSNESprices").hide();
+    });
+        
 $(".ddr1").click(function(){
   $(".ddr1Table").toggle();
     $(".ddr2Table").hide();
