@@ -55,6 +55,15 @@ $(".specialXBOXadvisory").click(function(){
     $("#specialNESprices").hide();
     $("#specialSNESprices").hide();
     });
+$(".individualDS").click(function(){
+  $("#dsTable").toggle();
+    $("#ps2Prices").hide();
+    $("#ps3Prices").hide();
+    $("#xbox360Prices").hide();
+    $("#specialNESprices").hide();
+    $("#specialSNESprices").hide();
+    });
+    
         
 $(".ddr1").click(function(){
   $(".ddr1Table").toggle();
