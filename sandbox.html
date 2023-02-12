@@ -4,13 +4,32 @@
     <!--
 DO NOT LINK THIS PAGE TO ANYTHING. THIS IS ONLY FOR SANDBOX PURPOSES
 -->
+    <style>
+        dropdown {        
+    float: left;
+  overflow: hidden;
+            
+        }
+    </style>
+    
 </head>
 <body>
+    <div class="flex-container">
+               <nav class="navbar navbar-dark bg-dark navbar-fixed-top" id="gridBar">
+                   <div class="dropdown">
+            <a class="navbar-brand" href="#"><img src="site-logo.png" class="gridLogo"></a>
+            <ul class="dropMenu" style="display:none">
+                <li><a href="./guidance.html" id="menuItem">Guidance</a></li>
+                <li><a class="active" href="./bestpractices.html" id="menuItem">Best Practices</a></li>
+                </ul>
+                       </div>
+        </nav>
     <div class="col-md-4" "consoles">
     <table id="consoleTable">
         
         
         </table>
     </div>
+    </div>            
 </body>
 </html>
